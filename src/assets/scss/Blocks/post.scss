@@ -8,10 +8,10 @@
 }
 
 .post__header{
-    margin: -2.5rem -2.5rem 2.5rem;
+    margin: 0 0 2.5rem;
 
-    &--video{
-        margin: 0 0 2.5rem;
+    &--preview{
+        margin: -2.5rem -2.5rem 2.5rem;
     }
 }
 
@@ -36,11 +36,67 @@
             text-decoration: underline;
         }
     }
+
+    &--mb0 {
+        margin-bottom: 0;
+    }
+}
+.post__description {
+    font-size: 14px;
+    color: #D2D2D2;
 }
 
 .post__text{
-font-size: 14px;
-color: #D2D2D2;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    color: $white;
+    border-bottom: 1px solid #1c1c1c;
+
+    h2,h3,h4,h5,h6 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.15em;
+    }
+    h4 {
+        font-size: 1.05em;
+    }
+    h5,h6 {
+        font-size: 0.95em;
+    }
+    ul,ol {
+        margin-bottom: 2rem;
+    }
+    ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+    
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .fr-video {
+    margin: 0;
+    } // October cms
 }
 .post__footer {
     display: flex;
@@ -55,10 +111,6 @@ color: #D2D2D2;
 
     a {
         color: inherit;
-        text-decoration: none;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 
@@ -84,4 +136,28 @@ color: #D2D2D2;
     &:hover{
         text-decoration: underline;
     }
+}
+
+
+.post__actions {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    color: $white;
+
+    a{
+    color: inherit;
+    opacity: 0.6;
+    transition: opacity .2s linear;
+
+    &:hover {
+        opacity: 1;
+    }
+    }
+}
+.post__actions--icon {
+    margin-left: 0.5rem;
 }
