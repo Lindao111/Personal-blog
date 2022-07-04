@@ -39,7 +39,7 @@ title: post
         </p>
     </div>  <!--post__text-->
     <div class="related">
-        <h3 class="related__title">Интересно почитать</h3>
+        <h3 class="post__subtitle">Интересно почитать</h3>
         <ul class="related__list">
             <li class="related__list-item">
                 <h4 class="related__list-title">
@@ -68,5 +68,52 @@ title: post
         </ul>
 
     </div> <!--/.related-->
+        <h3 class="post__subtitle">Обсуждение</h3>
+
+        <form class="form" action="/" method="post">
+            <div class="form__group">
+            <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+            <span class="form__line"></span>
+        </div>
+            <button class="btn btn--blue btn--rounded btn--sm" type="submit">отправить</button>
+        </form>
+    
+
+
+        <ul class="comments">
+            <li class="comments__item">
+                <div class="comments__header">
+                    <img class="comments__avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4UBas0J-qiNBiWjJC-dgGAn7Xon2sLfOIw&usqp=CAU" alt="">
+
+                    <div class="comments__author">
+                        <div class="comments__name">Шрек</div>
+                        <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+                    </div>
+                </div>
+                <div class="comments__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempora laborum ducimus incidunt, fugiat explicabo dicta architecto nulla veniam neque commodi modi unde aspernatur cumque eius voluptates soluta. Alias, voluptatum.
+                </div>
+                <button class="comments__reply" type="button" >ответить</button>
+
+
+
+                <ul class="comments">
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <img class="comments__avatar" src="https://cdn.britannica.com/89/182989-004-6375A4CC.jpg" alt="">
+        
+                            <div class="comments__author">
+                                <div class="comments__name">Уильям Стейг</div>
+                                <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+                            </div>
+                        </div>
+                        <div class="comments__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam tempora laborum ducimus incidunt, fugiat explicabo dicta architecto nulla veniam neque commodi modi unde aspernatur cumque eius voluptates soluta. Alias, voluptatum.
+                        </div>
+                        <button class="comments__reply" type="button" >ответить</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div> <!--post__content-->
 </article> <!--/.post -->
